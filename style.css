@@ -1,0 +1,119 @@
+@import url(https://fonts.google.com/specimen/Libre+Franklin);
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+#logo{
+    width: 20%;
+    margin: 30px auto 10px auto;
+}
+h2{
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 0;
+}
+span{
+    color: hsl(209, 33%, 12%);
+}
+h4{
+    color: hsl(0, 0%, 59%);
+    margin-top: 15px;
+}
+#email-input{
+    width: 70%;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 1px solid hsl(223, 87%, 63%);
+    margin: 0 15px 10px 15px ;
+}
+::placeholder{
+    color: hsl(223, 87%, 63%);
+    opacity: 50%;
+}
+small{
+    display: none;
+    color: hsl(354, 100%, 66%);
+    margin-bottom: 20px;
+}
+button{
+    width: 85%;
+    padding: 10px 25px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid hsl(223, 87%, 63%);
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    margin: 0 15px; 
+}
+button:hover{
+    opacity: 80%;
+}
+#illustration-dashboard{
+    margin: 50px 20px;
+}
+i{
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50%;
+    padding: 10px;
+}
+i:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+p{
+    color: hsl(0, 0%, 59%);
+}
+@media screen and (min-width:768px) {
+    body{
+        height: 100%;
+    }
+    .container{
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    #illustration-dashboard{
+        width: 40%;
+    }
+
+    button{
+       width: 20%;
+       height: 5%;
+    }
+    #email-input{
+        width: 80%;
+        margin-right: 50px;
+    }
+    #logo{
+        width: 7%;
+    }
+}
+@media screen and (min-width:1024px) {
+    #logo{
+        width: 7%;
+    }
+    #email-input{
+        width: 88%;
+    }
+    button{
+        width: 15%;
+        margin-left: 40px;
+    }
+    #illustration-dashboard{
+        margin: 40px 20px;
+    }
+    
+}
